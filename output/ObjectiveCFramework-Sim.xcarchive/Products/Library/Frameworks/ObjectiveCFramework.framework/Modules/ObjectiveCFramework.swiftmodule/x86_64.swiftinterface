@@ -1,0 +1,46 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ObjectiveCFramework
+import Foundation
+@_exported import ObjectiveCFramework
+import Swift
+@_inheritsConvenienceInitializers @objc public class SwiftViewController : UIKit.UIViewController {
+  @objc override dynamic public func viewDidLoad()
+  @objc public static func createViewController(_ customMessage: Swift.String) -> (ObjectiveCFramework.SwiftViewController)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc public protocol Envelopable {
+  @objc func send()
+  @objc func sign()
+}
+public struct Envelope {
+  public var name: Swift.String?
+  public var recipients: [Swift.String]?
+}
+@objc public enum SignerType : Swift.Int {
+  case remote
+  case inPerson
+  case carbonCopy
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class Signer : ObjectiveC.NSObject {
+  public static var signerType: ObjectiveCFramework.SignerType
+  @objc public static func printName()
+  @objc public func classFunction() -> Swift.String
+  @objc public func processEnvelope()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class SignerEnvelope : ObjectiveC.NSObject, ObjectiveCFramework.Envelopable {
+  @objc public func send()
+  @objc public func sign()
+  @objc final public let signerType: ObjectiveCFramework.SignerType
+  @objc deinit
+  @objc override dynamic public init()
+}

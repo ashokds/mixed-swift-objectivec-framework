@@ -1,0 +1,4 @@
+module ObjectiveCFramework_Private {
+    // import the objective-c private headers here. This would allow keeping objective-c interface private (cleaner).
+    export *
+}

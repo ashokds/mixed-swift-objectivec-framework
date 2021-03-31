@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift View Controller-->
+        <scene sceneID="IkM-KD-3ah">
+            <objects>
+                <viewController storyboardIdentifier="SwiftViewController" id="WrO-Z1-r2j" customClass="SwiftViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Knf-G9-MrY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-kx-DST">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7M-A4-hPH">
+                                        <rect key="frame" x="8" y="8" width="398" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Fli-f0-jRR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b7M-A4-hPH" secondAttribute="trailing" constant="8" id="4E3-kD-68z"/>
+                                    <constraint firstItem="b7M-A4-hPH" firstAttribute="top" secondItem="Uvr-kx-DST" secondAttribute="top" constant="8" id="Dnm-Fr-wdM"/>
+                                    <constraint firstItem="b7M-A4-hPH" firstAttribute="leading" secondItem="Uvr-kx-DST" secondAttribute="leading" constant="8" id="TQ2-pH-6QJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rqX-kA-cSa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rqX-kA-cSa" firstAttribute="bottom" secondItem="Uvr-kx-DST" secondAttribute="bottom" id="BfQ-L2-k57"/>
+                            <constraint firstItem="Uvr-kx-DST" firstAttribute="leading" secondItem="rqX-kA-cSa" secondAttribute="leading" id="OYR-qj-OoV"/>
+                            <constraint firstItem="Uvr-kx-DST" firstAttribute="top" secondItem="rqX-kA-cSa" secondAttribute="top" id="cHv-SJ-isu"/>
+                            <constraint firstItem="rqX-kA-cSa" firstAttribute="trailing" secondItem="Uvr-kx-DST" secondAttribute="trailing" id="uZ6-p6-Jft"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swiftTextField" destination="b7M-A4-hPH" id="WEO-ZR-LAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRM-wg-Nw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
