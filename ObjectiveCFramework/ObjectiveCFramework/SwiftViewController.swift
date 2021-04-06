@@ -23,8 +23,10 @@ public class SwiftViewController : UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: "SwiftViewController") // as! SwiftViewController
         if let viewController = viewController as? SwiftViewController {
             viewController.message = customMessage
+            viewController.invokeObjectiveC()
             return viewController
         }
+        
         return SwiftViewController()
     }
     

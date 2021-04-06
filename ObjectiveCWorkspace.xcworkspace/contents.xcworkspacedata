@@ -5,6 +5,9 @@
       location = "group:ObjectiveCFramework/ObjectiveCFramework.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SwiftProject/SwiftProject.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:ObjectiveCProject/ObjectiveCProject.xcodeproj">
    </FileRef>
 </Workspace>

@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		411A5902261458E600333C93 /* ObjectiveCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ADD10726140E3500B19233 /* ObjectiveCFramework.framework */; };
-		411A5903261458E600333C93 /* ObjectiveCFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41ADD10726140E3500B19233 /* ObjectiveCFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4102BB6026150E93008B11DF /* ObjectiveCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4102BB5F26150E93008B11DF /* ObjectiveCFramework.xcframework */; };
+		4102BB6126150E93008B11DF /* ObjectiveCFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4102BB5F26150E93008B11DF /* ObjectiveCFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41ADD0BF26140DC500B19233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ADD0BE26140DC500B19233 /* AppDelegate.m */; };
 		41ADD0C226140DC500B19233 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ADD0C126140DC500B19233 /* SceneDelegate.m */; };
 		41ADD0C526140DC500B19233 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41ADD0C426140DC500B19233 /* ViewController.m */; };
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				411A5903261458E600333C93 /* ObjectiveCFramework.framework in Embed Frameworks */,
+				4102BB6126150E93008B11DF /* ObjectiveCFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4102BB5F26150E93008B11DF /* ObjectiveCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjectiveCFramework.xcframework; path = ../archives/ObjectiveCFramework.xcframework; sourceTree = "<group>"; };
 		411A58F92614567300333C93 /* ObjectiveCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjectiveCFramework.xcframework; path = ../ObjectiveCFramework.xcframework; sourceTree = "<group>"; };
 		41ADD0BA26140DC500B19233 /* ObjectiveCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41ADD0BD26140DC500B19233 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411A5902261458E600333C93 /* ObjectiveCFramework.framework in Frameworks */,
+				4102BB6026150E93008B11DF /* ObjectiveCFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				411A58F92614567300333C93 /* ObjectiveCFramework.xcframework */,
+				4102BB5F26150E93008B11DF /* ObjectiveCFramework.xcframework */,
 				41ADD10726140E3500B19233 /* ObjectiveCFramework.framework */,
 			);
 			name = Frameworks;

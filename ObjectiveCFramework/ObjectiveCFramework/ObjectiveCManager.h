@@ -10,9 +10,7 @@ typedef void(^ _Nullable DSMViewControllerErrorBlock)(UIViewController * _Nullab
 @interface ObjectiveCManager : NSObject
 
 + (NSString *)name;
-
 + (NSString *)swiftEnum;
-
 + (NSString *)objCEnum;
 
 + (void)presentObjectiveCViewController:(NSString *)customMessage presentingController:(UIViewController *)presentingController completion:(DSMViewControllerErrorBlock)completion;
